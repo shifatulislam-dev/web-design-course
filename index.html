@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="src/assets/img/logo.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Responsive Web Design | DUITS</title>
+</head>
+
+<body>
+
+  <Header>
+    <nav class="main py-4">
+      <div class="navbar">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-3xl font-main text-main"><img class="w-20" src="src/assets/img/logo.jpg"
+              alt="">Dhaka university it society</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-main"><a>Course Details</a></li>
+            <li class="text-main"><a>Instructors</a></li>
+            <li class="text-main"><a>About Us</a></li>
+            <li class="text-main"><a>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 
+    End of Navbar Part
+     -->
+
+    <section class="banner-section relative py-25 overflow-hidden">
+
+      <!-- background icons -->
+
+      <i class="floating fa-solid fa-star absolute text-white/20 text-2xl top-10 left-10 animate-pulse"></i>
+      <i class="floating fa-solid fa-circle absolute text-white/10 text-3xl top-20 left-1/3 animate-bounce"></i>
+      <i class="floating fa-solid fa-square absolute text-white/10 text-xl bottom-60 left-150 animate-ping"></i>
+      <i class="floating fa-solid fa-code absolute text-white/20 text-2xl top-20 right-10"></i>
+      <i class="floating fa-solid fa-bolt absolute text-white/10 text-3xl bottom-20 left-20"></i>
+      <i class="fa-solid fa-arrow-right absolute text-white/10 text-3xl top-20 left-200 floating"></i>
+      <i class="fa-solid fa-code absolute text-white/10 text-4xl top-50 left-2/4 floating"></i>
+      <i class="fa-solid fa-network-wired absolute text-white/10 text-3xl bottom-40 left-190 floating"></i>
+      <i class="fa-solid fa-user-gear absolute text-white/10 text-4xl top-60 left-10 floating"></i>
+      <i class="fa-solid fa-arrow-up-right-dots absolute text-white/10 text-2xl bottom-10 right-260 floating"></i>
+
+      <!-- background icons -->
+
+      <div class="main banner-main grid grid-cols-2">
+        <div class="banner-text">
+          <h1 class="banner-heading font-main text-8xl text-white">
+            <span class="text-special">Responsive Web </span><br>Design with DUITS
+          </h1>
+          <p class="text-white text-2xl font-roboto"><span class="skeleton skeleton-text">
+              Crafting responsive dreams into beautiful digital worlds.
+            </span></p>
+          <div class="icon-box py-8 flex items-center gap-14">
+            <div class="icon-single flex flex-col items-center text-center">
+              <div class="icon-div h-20 w-20 rounded-full bg-white flex justify-center items-center">
+                <i class="fa-solid fa-code text-main text-3xl"></i>
+              </div>
+              <h3 class="text-white mt-2 font-main text-xl">HTML <br> CSS</h3>
+            </div>
+            <div class="icon-single flex flex-col items-center text-center">
+              <div class="icon-div h-20 w-20 rounded-full bg-white flex justify-center items-center">
+                <i class="fa-brands fa-js text-main text-3xl"></i>
+              </div>
+              <h3 class="text-white mt-2 font-main text-xl">JavaScript <br>JQuery</h3>
+            </div>
+            <div class="icon-single flex flex-col items-center text-center">
+              <div class="icon-div h-20 w-20 rounded-full bg-white flex justify-center items-center">
+                <i class="fa-brands fa-tailwind-css text-main text-3xl"></i>
+              </div>
+              <h3 class="text-white mt-2 font-main text-xl">Tailwind <br>Bootstrap</h3>
+            </div>
+          </div>
+        </div>
+        <div class="banner-img relative">
+          <img
+            class="relative z-20 w-full top-10 overflow-hidden drop-shadow-xl/50 animate-[bounce_3s_ease-in-out_infinite]"
+            src="src/assets/img/banner.png" alt="">
+          <div class="wavy-box absolute top-0 left-40 animate-spin [animation-duration:10s]"></div>
+        </div>
+      </div>
+    </section>
+  </Header>
+
+
+  <section class="course-details-section py-20">
+    <div class="course-details-main main">
+      <div class="course-details-title title text-center">
+        <h2>What we <span class="relative inline-block">
+            Learn
+            <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
+          </span></h2>
+      </div>
+      <div class="course-details-contents grid grid-cols-3 gap-5">
+
+        <!-- 
+        -------------------------------------------------------
+        ------------------Course Card Start--------------------
+        -------------------------------------------------------
+        -->
+
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-main text-3xl">HTML</h2>
+            <p>Learn how to build the structure of modern websites using HTML. Start from zero and create real web pages
+              step by step</p>
+             
+            <button class="btn bg-special text-white" onclick="my_modal_1.showModal()">View Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <div id="detailsBox" class="details">
+                  <div class="details-inner">
+                    <ul class="list bg-base-100 rounded-box shadow-md">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Points</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>What is HTML and how the web works</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Basic tags: heading, paragraph, links, images</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Lists, tables, and forms</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">04</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Semantic HTML (header, section, footer)</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">05</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build your first web page</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">06</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Mini project: Personal portfolio page</div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list bg-base-100 rounded-box shadow-md mt-5">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Outcomes</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Create basic website structure</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build forms and layouts</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Understand how websites are structured</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <form method="dialog">
+                     
+                    <button class="btn bg-special text-white">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="https://sabe.io/classes/css/hero.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-main text-3xl">CSS</h2>
+            <p>Learn how to design and style modern responsive websites using CSS from scratch. Build real-world layouts with confidence and creativity.</p>
+            <button class="btn bg-special text-white" onclick="my_modal_2.showModal()">View Details</button>
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box">
+                <div id="detailsBox" class="details">
+                  <div class="details-inner">
+                    <ul class="list bg-base-100 rounded-box shadow-md">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Points</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>CSS syntax and selectors</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Colors, fonts, and spacing</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Box model (margin, padding, border)</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">04</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Flexbox and Grid layout</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">05</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Responsive design basics</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">06</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Mini project: Stylish landing page</div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list bg-base-100 rounded-box shadow-md mt-5">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Outcomes</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Understand CSS structure deeply</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build real-world web page designs</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Work confidently with Flexbox & Grid</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn bg-special text-white">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="https://techsoftechs.com//assets/post/details/css-animation-and-transitions_1687448319.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-main text-3xl">CSS Animation</h2>
+            <p>Bring websites to life with smooth animations, transitions, and modern motion effects. Make your UI more engaging and interactive.</p>
+             
+            <button class="btn bg-special text-white" onclick="my_modal_3.showModal()">View Details</button>
+            <dialog id="my_modal_3" class="modal">
+              <div class="modal-box">
+                <div id="detailsBox" class="details">
+                  <div class="details-inner">
+                    <ul class="list bg-base-100 rounded-box shadow-md">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Points</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Transitions and transforms</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Keyframes animation</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Hover effects</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">04</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Loading animations</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">05</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Floating and motion effects</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">06</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Mini project: Animated UI section</div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list bg-base-100 rounded-box shadow-md mt-5">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Outcomes</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Create smooth UI animations</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Improve user experience with motion</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build modern interactive components</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <form method="dialog">
+                     
+                    <button class="btn bg-special text-white">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-main text-3xl">HTML</h2>
+            <p>Learn how to build the structure of modern websites using HTML. Start from zero and create real web pages
+              step by step</p>
+             
+            <button class="btn bg-special text-white" onclick="my_modal_1.showModal()">View Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <div id="detailsBox" class="details">
+                  <div class="details-inner">
+                    <ul class="list bg-base-100 rounded-box shadow-md">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Points</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>What is HTML and how the web works</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Basic tags: heading, paragraph, links, images</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Lists, tables, and forms</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">04</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Semantic HTML (header, section, footer)</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">05</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build your first web page</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">06</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Mini project: Personal portfolio page</div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list bg-base-100 rounded-box shadow-md mt-5">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Outcomes</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Create basic website structure</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build forms and layouts</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Understand how websites are structured</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <form method="dialog">
+                     
+                    <button class="btn bg-special text-white">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-main text-3xl">HTML</h2>
+            <p>Learn how to build the structure of modern websites using HTML. Start from zero and create real web pages
+              step by step</p>
+             
+            <button class="btn bg-special text-white" onclick="my_modal_1.showModal()">View Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <div id="detailsBox" class="details">
+                  <div class="details-inner">
+                    <ul class="list bg-base-100 rounded-box shadow-md">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Points</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>What is HTML and how the web works</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Basic tags: heading, paragraph, links, images</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Lists, tables, and forms</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">04</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Semantic HTML (header, section, footer)</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">05</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build your first web page</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">06</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Mini project: Personal portfolio page</div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list bg-base-100 rounded-box shadow-md mt-5">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Outcomes</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Create basic website structure</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build forms and layouts</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Understand how websites are structured</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <form method="dialog">
+                     
+                    <button class="btn bg-special text-white">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-main text-3xl">HTML</h2>
+            <p>Learn how to build the structure of modern websites using HTML. Start from zero and create real web pages
+              step by step</p>
+             
+            <button class="btn bg-special text-white" onclick="my_modal_1.showModal()">View Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <div id="detailsBox" class="details">
+                  <div class="details-inner">
+                    <ul class="list bg-base-100 rounded-box shadow-md">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Points</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>What is HTML and how the web works</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Basic tags: heading, paragraph, links, images</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Lists, tables, and forms</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">04</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Semantic HTML (header, section, footer)</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">05</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build your first web page</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">06</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Mini project: Personal portfolio page</div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list bg-base-100 rounded-box shadow-md mt-5">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Outcomes</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Create basic website structure</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build forms and layouts</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Understand how websites are structured</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <form method="dialog">
+                     
+                    <button class="btn bg-special text-white">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-main text-3xl">HTML</h2>
+            <p>Learn how to build the structure of modern websites using HTML. Start from zero and create real web pages
+              step by step</p>
+             
+            <button class="btn bg-special text-white" onclick="my_modal_1.showModal()">View Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <div id="detailsBox" class="details">
+                  <div class="details-inner">
+                    <ul class="list bg-base-100 rounded-box shadow-md">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Points</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>What is HTML and how the web works</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Basic tags: heading, paragraph, links, images</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Lists, tables, and forms</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">04</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Semantic HTML (header, section, footer)</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">05</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build your first web page</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">06</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Mini project: Personal portfolio page</div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list bg-base-100 rounded-box shadow-md mt-5">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Outcomes</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Create basic website structure</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build forms and layouts</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Understand how websites are structured</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <form method="dialog">
+                     
+                    <button class="btn bg-special text-white">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-main text-3xl">HTML</h2>
+            <p>Learn how to build the structure of modern websites using HTML. Start from zero and create real web pages
+              step by step</p>
+             
+            <button class="btn bg-special text-white" onclick="my_modal_1.showModal()">View Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <div id="detailsBox" class="details">
+                  <div class="details-inner">
+                    <ul class="list bg-base-100 rounded-box shadow-md">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Points</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>What is HTML and how the web works</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Basic tags: heading, paragraph, links, images</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Lists, tables, and forms</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">04</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Semantic HTML (header, section, footer)</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">05</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build your first web page</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">06</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Mini project: Personal portfolio page</div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list bg-base-100 rounded-box shadow-md mt-5">
+
+                      <li class="p-4 pb-2 text-lg tracking-wide font-main text-main">Learning Outcomes</li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">01</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Create basic website structure</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">02</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Build forms and layouts</div>
+                        </div>
+                      </li>
+
+                      <li class="list-row">
+                        <div class="text-sm font-thin opacity-30 tabular-nums">03</div>
+                        <div class="text-sm list-col-grow">
+                          <div>Understand how websites are structured</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <form method="dialog">
+                     
+                    <button class="btn bg-special text-white">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- 
+  
+  Footer Section
+  
+  -->
+  <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+    <nav class="grid grid-flow-col gap-4">
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <aside>
+      <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+    </aside>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/3aaa27906b.js" crossorigin="anonymous"></script>
+  <script src="/src/main.js"></script>
+</body>
+
+</html>

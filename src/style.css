@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui" {
+    themes: light --prefersdark;
+}
+
+@theme {
+    --color-main: #4a266a;
+    --color-special: #ffcf00;
+
+    --animate-bounce: bounce 1s ease-in-out infinite;
+
+    --font-main: "Bebas Neue", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(-5%);
+        }
+
+        50% {
+            transform: none;
+        }
+    }
+
+}
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes underlineMove {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  51% {
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+
+.main {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+.banner-section {
+    background: linear-gradient(135deg, #4a266a, #2a1240, #0f0618);
+    animation: gradientMove 4s ease infinite;
+    background-size: 300% 300%;
+}
+
+.wavy-box {
+    z-index: 1;
+    background: #fff;
+    --s: 750px;
+    /* adjust to control the size */
+
+    width: var(--s);
+    aspect-ratio: 1;
+    --g: /calc(var(--s)*0.181) calc(var(--s)*0.181) radial-gradient(50% 50%, #000 99%, #0000 101%) no-repeat;
+    mask: calc(50% + var(--s)*0.362) calc(50% + var(--s)*0.124) var(--g), calc(50% + var(--s)*0.169) calc(50% + var(--s)*0.344) var(--g), calc(50% + var(--s)*-0.124) calc(50% + var(--s)*0.362) var(--g), calc(50% + var(--s)*-0.344) calc(50% + var(--s)*0.169) var(--g), calc(50% + var(--s)*-0.362) calc(50% + var(--s)*-0.124) var(--g), calc(50% + var(--s)*-0.169) calc(50% + var(--s)*-0.344) var(--g), calc(50% + var(--s)*0.124) calc(50% + var(--s)*-0.362) var(--g), calc(50% + var(--s)*0.344) calc(50% + var(--s)*-0.169) var(--g), radial-gradient(calc(var(--s)*0.414), #000 99%, #0000 101%) subtract, calc(50% + var(--s)*0.346) calc(50% + var(--s)*0.305) var(--g), calc(50% + var(--s)*0.029) calc(50% + var(--s)*0.46) var(--g), calc(50% + var(--s)*-0.305) calc(50% + var(--s)*0.346) var(--g), calc(50% + var(--s)*-0.46) calc(50% + var(--s)*0.029) var(--g), calc(50% + var(--s)*-0.346) calc(50% + var(--s)*-0.305) var(--g), calc(50% + var(--s)*-0.029) calc(50% + var(--s)*-0.46) var(--g), calc(50% + var(--s)*0.305) calc(50% + var(--s)*-0.346) var(--g), calc(50% + var(--s)*0.46) calc(50% + var(--s)*-0.029) var(--g);
+
+}
+
+.banner-heading span {
+    font-size: 108px;
+    text-shadow: rgba(255, 208, 0, 0.56) 0px 0px 24px;
+}
+
+.banner-heading {
+    text-shadow: rgba(255, 255, 255, 0.56) 0px 0px 24px;
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.title h2{
+    font-size: 44px;
+    font-family: var(--font-main);
+    color: var(--color-main);
+}
+.animate-underline {
+  animation: underlineMove 2.5s infinite ease-in-out;
+}
