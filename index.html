@@ -21,7 +21,7 @@
   <Header>
     <nav class="nav-main py-3 md:w-full lg:main">
       <div class="navbar bg-base-100">
-        <div class="navbar-start justify-between">
+        <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -33,14 +33,14 @@
               <li><a href="#courseTopic">Course Topic</a></li>
               <li><a href="#courseTimeline">Course Timeline</a></li>
               <li><a href="#courseSchedule">Course Schedule</a></li>
-              <li><a href="#topic Breakdown">Topic Breakdown</a></li>
+              <li><a href="#topicBreakdown">Topic Breakdown</a></li>
               <li><a href="#price">Price</a></li>
               <li><a href="#instructors">Instructors</a></li>
               <li><a href="#aboutUs">About Us</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost md:flex md:flex-row-reverse sm:flex sm:flex-row-reverse lg:text-2xl text-main font-main logo-link sm:gap-[30px] sm:justify-around md:gap-[30px] md:justify-around"
+          <a class="btn btn-ghost lg:text-2xl text-main font-main logo-link text-left"
             href="/"><img class="w-15" src="src/assets/img/logo.jpg" alt=""><span>Dhaka university it society</span></a>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -131,7 +131,7 @@
 
 
   <main>
-    <section class="course-details-section pt-20 md:px-10">
+    <section id="courseTopic" class="course-details-section pt-20 md:px-10">
       <div class="course-details-main lg:main">
         <div class="course-details-title title text-center px-4">
           <h2>What we <span class="relative inline-block">
@@ -1056,8 +1056,8 @@
       </div>
     </section>
 
-    <section class="course-timeline-section py-20 bg-gradient-to-br from-base-100 to-base-200">
-      <div class="course-timeline-main lg:main">
+    <section id="courseTimeline" class="course-timeline-section py-20 bg-gradient-to-br from-base-100 to-base-200">
+      <div class="course-timeline-main lg:max-w-[1280px] lg:mx-auto">
         <!-- Course Overview -->
         <div class="course-timeline-content-box mb-20">
           <div class="course-details-title title text-center mb-16">
@@ -1070,7 +1070,7 @@
           </div>
 
           <!-- Overview Cards -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div id="courseSchedule" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <div
               class="card bg-gradient-to-br from-main to-main/80 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="card-body items-center text-center p-6">
@@ -1154,7 +1154,7 @@
         </div>
 
         <!-- Course Topic Breakdown - Timeline Style -->
-        <div class="course-breakdown-content-box">
+        <div id="topicBreakdown" class="course-breakdown-content-box">
           <div class="course-details-title title text-center mb-16">
             <h2>Course Topic <span class="relative inline-block">
                 Breakdown
@@ -1458,12 +1458,10 @@
       </div>
     </section>
 
-    <section class="pricing-section py-16 md:py-20 relative overflow-hidden">
-      <!-- Background elements for aesthetic -->
-      <div class="absolute top-0 right-0 w-52 md:w-96 h-52 md:h-96 rounded-full bg-main/5 blur-3xl"></div>
-      <div class="absolute bottom-0 left-0 w-52 md:w-96 h-52 md:h-96 rounded-full bg-[#ffcf00]/10 blur-3xl"></div>
+    <section id="price" class="pricing-section py-16 md:py-20">
+      
 
-      <div class="main-pricing main relative z-10 px-4 md:px-0">
+      <div class="main-pricing lg:max-w-[1280px] lg:mx-auto relative z-10 px-4 md:px-0">
         <div class="course-details-title title text-center mb-12 md:mb-16">
           <h2>Course <span class="relative inline-block">
               Pricing
@@ -1484,30 +1482,30 @@
                   class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
                   <i class="fa-solid fa-user text-main text-xl md:text-2xl"></i>
                 </div>
-                <h3 class="card-title font-main text-xl md:text-2xl text-gray-800\">Non-Student</h3>
-                <p class="text-xs md:text-sm text-gray-500 mb-2 font-roboto h-10\">For professionals and general
+                <h3 class="card-title font-main text-xl md:text-2xl text-gray-800">Non-Student</h3>
+                <p class="text-xs md:text-sm text-gray-500 mb-2 font-roboto h-10">For professionals and general
                   learners.</p>
-                <div class=\"my-3 md:my-4\">
-                  <span class=\"text-3xl md:text-4xl font-bold text-main font-main\">1500৳</span>
+                <div class="my-3 md:my-4">
+                  <span class="text-3xl md:text-4xl font-bold text-main font-main">1500৳</span>
                 </div>
-                <ul class=\"text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto flex-grow\">
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Full course
+                <ul class="text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto flex-grow">
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Full course
                     access</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Live classes
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Live classes
                     via Zoom</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Google
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Google
                     Classroom</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>WhatsApp group
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>WhatsApp group
                   </li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Project
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Project
                     feedback</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Certificate
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Certificate
                   </li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Support
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Support
                     sessions</li>
                 </ul>
-                <button class=\"btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white
-                  hover:border-main mt-auto text-sm md:text-base\">Enroll Now</button>
+                <button class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white
+                  hover:border-main mt-auto text-sm md:text-base">Enroll Now</button>
               </div>
             </div>
 
@@ -1619,7 +1617,7 @@
     </section>
 
 
-    <section class="instructor-section py-16 md:py-20 bg-base-200">
+    <section id="instructors" class="instructor-section py-16 md:py-20 bg-base-200">
       <div class="lg:main px-4 md:px-0">
         <div class="course-details-title title text-center mb-12 md:mb-16">
           <h2>Meet the <span class="relative inline-block">
@@ -1632,7 +1630,7 @@
 
         <div class="instructor-content flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
           <div class="instructor-image flex-shrink-0">
-            <div class="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
+            <div class="lg:w-80 lg:h-80 md:w-60 md:h-60 sm:w-30 sm:h-30 rounded-full overflow-hidden shadow-2xl border-8 border-white">
               <img
                 src="https://media.licdn.com/dms/image/v2/D5603AQEnNg9ak9CsgQ/profile-displayphoto-shrink_800_800/B56Za3AdcZHgAk-/0/1746827074927?e=1776902400&v=beta&t=Q5p2gvy8M1hBuPjoU-CQBFjv6RUahIpxR6AXXHA_8es"
                 alt="Instructor" class="w-full h-full object-cover">
@@ -1692,9 +1690,8 @@
       </div>
     </section>
 
-    <!-- About Us Section -->
-    <section class="about-us-section py-16 md:py-20 bg-gradient-to-br from-base-100 to-base-200">
-      <div class="lg:main px-4 md:px-0">
+    <section id="aboutUs" class="about-us-section py-16 md:py-20 bg-gradient-to-br from-base-100 to-base-200">
+      <div class="lg:max-w-[1280px] lg:mx-auto px-4 md:px-0">
         <div class="course-details-title title text-center mb-12 md:mb-16">
           <h2>About <span class="relative inline-block">
               Us
@@ -1759,7 +1756,6 @@
                   src="https://scontent.fdac1-2.fna.fbcdn.net/v/t39.30808-6/480570465_639161968498576_1646113822593879667_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=2a1932&_nc_ohc=PlnO16PVx3kQ7kNvwGe6Sua&_nc_oc=AdrjH-Ip4bCNR5htZf62fsM5HqgtX8sbQwqw3Ip17GVEhOJTwaPPlemgxY679PNgTbs&_nc_zt=23&_nc_ht=scontent.fdac1-2.fna&_nc_gid=M_lmipDKIy3mKojl1Ws73g&_nc_ss=7a389&oh=00_Af0yL1ft2p797wysQw2q9isx2wN_z7c8UTK6OGH-Gii09g&oe=69DB197A"
                   alt="Dhaka University IT Society" class="w-full h-full object-cover">
               </div>
-              <!-- Floating elements -->
               <div
                 class="absolute -top-4 -right-4 w-20 h-20 bg-main rounded-full flex items-center justify-center shadow-lg animate-bounce">
                 <i class="fa-solid fa-code text-white text-2xl"></i>
@@ -1903,7 +1899,7 @@
     </section>
 
     <!-- Contact Us Section -->
-    <section class="contact-us-section py-16 md:py-20 bg-white">
+    <section id="contact" class="contact-us-section py-16 md:py-20 bg-white">
       <div class="lg:main px-4 md:px-0">
         <div class="course-details-title title text-center mb-12 md:mb-16">
           <h2>Contact <span class="relative inline-block">
