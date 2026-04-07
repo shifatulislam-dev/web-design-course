@@ -19,39 +19,50 @@
 <body>
 
   <Header>
-    <nav class="main py-4">
+    <nav class="main nav-main py-3">
       <div class="navbar bg-base-100">
-        <div class="navbar-start w-full lg:w-auto flex justify-between lg:justify-start">
-          <a class="btn btn-ghost text-xl md:text-3xl font-main text-main h-auto py-2"><img class="w-12 md:w-20" src="src/assets/img/logo.jpg"
-              alt=""><span class="hidden sm:inline">Dhaka University IT Society</span><span class="sm:hidden">DUITS</span></a>
-          
-          <div class="dropdown dropdown-end lg:hidden">
-            <div tabindex="0" role="button" class="btn btn-ghost">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52">
-              <li class="text-main"><a>Course Details</a></li>
-              <li class="text-main"><a>Instructors</a></li>
-              <li class="text-main"><a>About Us</a></li>
-              <li class="text-main"><a>Contact</a></li>
+            <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a href="#courseTopic">Course Topic</a></li>
+              <li><a href="#courseTimeline">Course Timeline</a></li>
+              <li><a href="#courseSchedule">Course Schedule</a></li>
+              <li><a href="#topic Breakdown">Topic Breakdown</a></li>
+              <li><a href="#price">Price</a></li>
+              <li><a href="#instructors">Instructors</a></li>
+              <li><a href="#aboutUs">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
+          <a class="btn btn-ghost text-2xl text-main font-main" href="/"><img class="w-15" src="src/assets/img/logo.jpg" alt="">Dhaka university it society</a>
         </div>
-        <div class="navbar-end hidden lg:flex flex-1">
+        <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li class="text-main"><a>Course Details</a></li>
-            <li class="text-main"><a>Instructors</a></li>
-            <li class="text-main"><a>About Us</a></li>
-            <li class="text-main"><a>Contact</a></li>
+            <li><a href="#courseTopic">Course Topic</a></li>
+            <li><a href="#courseTimeline">Course Timeline</a></li>
+            <li><a href="#courseSchedule">Course Schedule</a></li>
+            <li><a href="#topic Breakdown">Topic Breakdown</a></li>
+            <li><a href="#price">Price</a></li>
+            <li><a href="#instructors">Instructors</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!-- 
     End of Navbar Part
      -->
 
-    <section class="banner-section relative overflow-hidden bg-[radial-gradient(circle_at_top_right,_rgba(255,207,0,0.15),_transparent_35%),linear-gradient(135deg,#0b1120_0%,#131a33_40%,#0d1220_100%)] py-24">
+    <section
+      class="banner-section relative overflow-hidden py-24">
 
       <!-- background icons -->
 
@@ -68,16 +79,20 @@
 
       <!-- background icons -->
 
-      <div class="main banner-main flex flex-col lg:grid items-center gap-6 md:gap-8 lg:gap-10 lg:grid-cols-[1.05fr_0.95fr] px-4 md:px-0">
+      <div
+        class="main banner-main grid items-center gap-6 md:gap-8 lg:gap-10 lg:grid-cols-[1.05fr_0.95fr] px-4 md:px-0">
         <div class="banner-text text-white max-w-2xl">
-          <div class="inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-sm uppercase tracking-[0.2em] text-white shadow-lg shadow-white/5 mb-6">
+          <div
+            class="inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-sm uppercase tracking-[0.2em] text-white shadow-lg shadow-white/5 mb-6">
             <i class="fa-solid fa-school-circle-check"></i>
-            DUITS Course</div>
+            DUITS Course
+          </div>
           <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-main leading-tight">
-            Responsive Web Design<br class="hidden sm:block"/> Course with DUITS
+            Responsive Web Design<br class="hidden sm:block" /> Course with DUITS
           </h1>
           <p class="mt-6 text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
-            Learn HTML, CSS, JavaScript and responsive layouts through real assignments, live guidance, and support from Dhaka University IT Society.
+            Learn HTML, CSS, JavaScript and responsive layouts through real assignments, live guidance, and support from
+            Dhaka University IT Society.
           </p>
 
           <div class="mt-6 md:mt-8 grid gap-3 grid-cols-2 sm:grid-cols-3">
@@ -96,8 +111,11 @@
           </div>
 
           <div class="mt-8 md:mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-            <a href="#" class="btn bg-special text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-sm md:text-lg shadow-xl shadow-special/40 hover:bg-main transition-all duration-300">Enroll Now</a>
-            <a href="#course-details" class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm md:text-lg">
+            <a href="#"
+              class="btn bg-special text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-sm md:text-lg shadow-xl shadow-special/40 hover:bg-main transition-all duration-300">Enroll
+              Now</a>
+            <a href="#course-details"
+              class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm md:text-lg">
               <i class="fa-solid fa-arrow-down"></i> <span class="hidden sm:inline">View</span> Curriculum
             </a>
           </div>
@@ -121,7 +139,8 @@
               Learn
               <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
             </span></h2>
-          <p class="text-base md:text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Explore our comprehensive curriculum covering essential web development technologies from HTML to advanced frameworks.</p>
+          <p class="text-base md:text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Explore our comprehensive
+            curriculum covering essential web development technologies from HTML to advanced frameworks.</p>
         </div>
         <div class="course-details-contents grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
 
@@ -1047,12 +1066,14 @@
                 Timeline
                 <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
               </span></h2>
-            <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Follow our structured 8-week program with live classes, hands-on projects, and dedicated support throughout your learning journey.</p>
+            <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Follow our structured 8-week program
+              with live classes, hands-on projects, and dedicated support throughout your learning journey.</p>
           </div>
 
           <!-- Overview Cards -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            <div class="card bg-gradient-to-br from-main to-main/80 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div
+              class="card bg-gradient-to-br from-main to-main/80 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="card-body items-center text-center p-6">
                 <div class="icon-div h-16 w-16 rounded-full bg-white/20 flex justify-center items-center mb-4">
                   <i class="fa-solid fa-calendar-days text-2xl text-white"></i>
@@ -1062,7 +1083,8 @@
               </div>
             </div>
 
-            <div class="card bg-gradient-to-br from-special to-special/80 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div
+              class="card bg-gradient-to-br from-special to-special/80 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="card-body items-center text-center p-6">
                 <div class="icon-div h-16 w-16 rounded-full bg-white/20 flex justify-center items-center mb-4">
                   <i class="fa-solid fa-clock text-2xl text-white"></i>
@@ -1072,7 +1094,8 @@
               </div>
             </div>
 
-            <div class="card bg-gradient-to-br from-green-500 to-green-600 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div
+              class="card bg-gradient-to-br from-green-500 to-green-600 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="card-body items-center text-center p-6">
                 <div class="icon-div h-16 w-16 rounded-full bg-white/20 flex justify-center items-center mb-4">
                   <i class="fa-solid fa-users text-2xl text-white"></i>
@@ -1082,7 +1105,8 @@
               </div>
             </div>
 
-            <div class="card bg-gradient-to-br from-purple-500 to-purple-600 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div
+              class="card bg-gradient-to-br from-purple-500 to-purple-600 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="card-body items-center text-center p-6">
                 <div class="icon-div h-16 w-16 rounded-full bg-white/20 flex justify-center items-center mb-4">
                   <i class="fa-solid fa-rocket text-2xl text-white"></i>
@@ -1137,18 +1161,22 @@
                 Breakdown
                 <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
               </span></h2>
-            <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Dive deep into each topic with detailed weekly breakdowns, learning objectives, and practical projects to build your skills progressively.</p>
+            <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Dive deep into each topic with detailed
+              weekly breakdowns, learning objectives, and practical projects to build your skills progressively.</p>
           </div>
 
           <!-- Timeline Container -->
           <div class="timeline-container max-w-6xl mx-auto relative">
             <!-- Timeline Line -->
-            <div class="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-main via-special to-green-500 h-full rounded-full"></div>
+            <div
+              class="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-main via-special to-green-500 h-full rounded-full">
+            </div>
 
             <div class="timeline-items space-y-12">
               <!-- Week 1-2: HTML Fundamentals -->
               <div class="timeline-item flex flex-col lg:flex-row items-center gap-8 relative">
-                <div class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-main">
+                <div
+                  class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-main">
                   <div class="flex items-center gap-4 mb-4">
                     <div class="w-16 h-16 rounded-full bg-main flex items-center justify-center">
                       <i class="fa-solid fa-code text-2xl text-white"></i>
@@ -1179,7 +1207,9 @@
                 </div>
 
                 <!-- Timeline Dot -->
-                <div class="timeline-dot hidden lg:flex w-6 h-6 bg-main rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div
+                  class="timeline-dot hidden lg:flex w-6 h-6 bg-main rounded-full border-4 border-white shadow-lg z-10">
+                </div>
 
                 <div class="lg:w-5/12"></div>
               </div>
@@ -1188,9 +1218,12 @@
               <div class="timeline-item flex flex-col lg:flex-row items-center gap-8 relative">
                 <div class="lg:w-5/12"></div>
 
-                <div class="timeline-dot hidden lg:flex w-6 h-6 bg-special rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div
+                  class="timeline-dot hidden lg:flex w-6 h-6 bg-special rounded-full border-4 border-white shadow-lg z-10">
+                </div>
 
-                <div class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-special">
+                <div
+                  class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-special">
                   <div class="flex items-center gap-4 mb-4">
                     <div class="w-16 h-16 rounded-full bg-special flex items-center justify-center">
                       <i class="fa-brands fa-css3 text-2xl text-white"></i>
@@ -1223,7 +1256,8 @@
 
               <!-- Week 4: Advanced CSS -->
               <div class="timeline-item flex flex-col lg:flex-row items-center gap-8 relative">
-                <div class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-green-500">
+                <div
+                  class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-green-500">
                   <div class="flex items-center gap-4 mb-4">
                     <div class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center">
                       <i class="fa-brands fa-css3-alt text-2xl text-white"></i>
@@ -1253,7 +1287,9 @@
                   </div>
                 </div>
 
-                <div class="timeline-dot hidden lg:flex w-6 h-6 bg-green-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div
+                  class="timeline-dot hidden lg:flex w-6 h-6 bg-green-500 rounded-full border-4 border-white shadow-lg z-10">
+                </div>
 
                 <div class="lg:w-5/12"></div>
               </div>
@@ -1262,9 +1298,12 @@
               <div class="timeline-item flex flex-col lg:flex-row items-center gap-8 relative">
                 <div class="lg:w-5/12"></div>
 
-                <div class="timeline-dot hidden lg:flex w-6 h-6 bg-purple-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div
+                  class="timeline-dot hidden lg:flex w-6 h-6 bg-purple-500 rounded-full border-4 border-white shadow-lg z-10">
+                </div>
 
-                <div class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-purple-500">
+                <div
+                  class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-purple-500">
                   <div class="flex items-center gap-4 mb-4">
                     <div class="w-16 h-16 rounded-full bg-purple-500 flex items-center justify-center">
                       <i class="fa-solid fa-jet-fighter-up text-2xl text-white"></i>
@@ -1297,7 +1336,8 @@
 
               <!-- Week 6: JavaScript Basics -->
               <div class="timeline-item flex flex-col lg:flex-row items-center gap-8 relative">
-                <div class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-500">
+                <div
+                  class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-500">
                   <div class="flex items-center gap-4 mb-4">
                     <div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center">
                       <i class="fa-brands fa-js text-2xl text-white"></i>
@@ -1327,7 +1367,9 @@
                   </div>
                 </div>
 
-                <div class="timeline-dot hidden lg:flex w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div
+                  class="timeline-dot hidden lg:flex w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg z-10">
+                </div>
 
                 <div class="lg:w-5/12"></div>
               </div>
@@ -1336,9 +1378,12 @@
               <div class="timeline-item flex flex-col lg:flex-row items-center gap-8 relative">
                 <div class="lg:w-5/12"></div>
 
-                <div class="timeline-dot hidden lg:flex w-6 h-6 bg-indigo-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div
+                  class="timeline-dot hidden lg:flex w-6 h-6 bg-indigo-500 rounded-full border-4 border-white shadow-lg z-10">
+                </div>
 
-                <div class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-indigo-500">
+                <div
+                  class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-indigo-500">
                   <div class="flex items-center gap-4 mb-4">
                     <div class="w-16 h-16 rounded-full bg-indigo-500 flex items-center justify-center">
                       <i class="fa-solid fa-swatchbook text-2xl text-white"></i>
@@ -1371,7 +1416,8 @@
 
               <!-- Week 8: Modern Frameworks -->
               <div class="timeline-item flex flex-col lg:flex-row items-center gap-8 relative">
-                <div class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-pink-500">
+                <div
+                  class="timeline-content lg:w-5/12 bg-base-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-pink-500">
                   <div class="flex items-center gap-4 mb-4">
                     <div class="w-16 h-16 rounded-full bg-pink-500 flex items-center justify-center">
                       <i class="fa-brands fa-tailwind-css text-2xl text-white"></i>
@@ -1401,7 +1447,9 @@
                   </div>
                 </div>
 
-                <div class="timeline-dot hidden lg:flex w-6 h-6 bg-pink-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div
+                  class="timeline-dot hidden lg:flex w-6 h-6 bg-pink-500 rounded-full border-4 border-white shadow-lg z-10">
+                </div>
 
                 <div class="lg:w-5/12"></div>
               </div>
@@ -1415,47 +1463,61 @@
       <!-- Background elements for aesthetic -->
       <div class="absolute top-0 right-0 w-52 md:w-96 h-52 md:h-96 rounded-full bg-main/5 blur-3xl"></div>
       <div class="absolute bottom-0 left-0 w-52 md:w-96 h-52 md:h-96 rounded-full bg-[#ffcf00]/10 blur-3xl"></div>
-      
+
       <div class="main-pricing main relative z-10 px-4 md:px-0">
         <div class="course-details-title title text-center mb-12 md:mb-16">
           <h2>Course <span class="relative inline-block">
               Pricing
               <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
             </span></h2>
-          <p class="text-base md:text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Choose the right path for your learning journey. We offer special discounts to support students and DUITS members.</p>
+          <p class="text-base md:text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Choose the right path for
+            your learning journey. We offer special discounts to support students and DUITS members.</p>
         </div>
-        
+
         <div class="pricing-content-box">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
             <!-- Non-Student Plan -->
-            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-base-200">
+            <div
+              class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-base-200">
               <div class="card-body items-center text-center p-6 md:p-8">
-                <div class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
+                <div
+                  class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
                   <i class="fa-solid fa-user text-main text-xl md:text-2xl"></i>
                 </div>
                 <h3 class="card-title font-main text-xl md:text-2xl text-gray-800\">Non-Student</h3>
-                <p class="text-xs md:text-sm text-gray-500 mb-2 font-roboto h-10\">For professionals and general learners.</p>
+                <p class="text-xs md:text-sm text-gray-500 mb-2 font-roboto h-10\">For professionals and general
+                  learners.</p>
                 <div class=\"my-3 md:my-4\">
                   <span class=\"text-3xl md:text-4xl font-bold text-main font-main\">1500৳</span>
                 </div>
                 <ul class=\"text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto flex-grow\">
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Full course access</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Live classes via Zoom</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Google Classroom</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>WhatsApp group</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Project feedback</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Certificate</li>
-                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Support sessions</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Full course
+                    access</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Live classes
+                    via Zoom</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Google
+                    Classroom</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>WhatsApp group
+                  </li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Project
+                    feedback</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Certificate
+                  </li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Support
+                    sessions</li>
                 </ul>
-                <button class=\"btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto text-sm md:text-base\">Enroll Now</button>
+                <button class=\"btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white
+                  hover:border-main mt-auto text-sm md:text-base\">Enroll Now</button>
               </div>
             </div>
 
             <!-- Student Plan -->
-            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-base-200">
+            <div
+              class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-base-200">
               <div class="card-body items-center text-center p-6 md:p-8">
-                <div class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
+                <div
+                  class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
                   <i class="fa-solid fa-graduation-cap text-main text-xl md:text-2xl"></i>
                 </div>
                 <h3 class="card-title font-main text-xl md:text-2xl text-gray-800">Student</h3>
@@ -1464,22 +1526,32 @@
                   <span class="text-3xl md:text-4xl font-bold text-main font-main">1200৳</span>
                 </div>
                 <ul class="text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto flex-grow">
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Full course access</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Live classes via Zoom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Google Classroom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>WhatsApp group</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Project feedback</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Full course
+                    access</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Live classes via
+                    Zoom</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Google Classroom
+                  </li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>WhatsApp group
+                  </li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Project feedback
+                  </li>
                   <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Certificate</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Support sessions</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Support sessions
+                  </li>
                 </ul>
-                <button class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto text-sm md:text-base">Enroll Now</button>
+                <button
+                  class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto text-sm md:text-base">Enroll
+                  Now</button>
               </div>
             </div>
 
             <!-- DU Student Plan -->
-            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-base-200">
+            <div
+              class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-base-200">
               <div class="card-body items-center text-center p-6 md:p-8">
-                <div class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
+                <div
+                  class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
                   <i class="fa-solid fa-building-columns text-main text-xl md:text-2xl"></i>
                 </div>
                 <h3 class="card-title font-main text-xl md:text-2xl text-gray-800">DU Student</h3>
@@ -1488,22 +1560,32 @@
                   <span class="text-3xl md:text-4xl font-bold text-main font-main">800৳</span>
                 </div>
                 <ul class="text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto flex-grow">
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Full course access</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Live classes via Zoom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Google Classroom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>WhatsApp group</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Project feedback</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Full course
+                    access</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Live classes via
+                    Zoom</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Google Classroom
+                  </li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>WhatsApp group
+                  </li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Project feedback
+                  </li>
                   <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Certificate</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Support sessions</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Support sessions
+                  </li>
                 </ul>
-                <button class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto text-sm md:text-base">Enroll Now</button>
+                <button
+                  class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto text-sm md:text-base">Enroll
+                  Now</button>
               </div>
             </div>
 
             <!-- DUITS Member Plan -->
-            <div class="card bg-main shadow-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-3 text-white border border-main">
+            <div
+              class="card bg-main shadow-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-3 text-white border border-main">
               <div class="card-body items-center text-center p-6 md:p-8">
-                <div class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-white/20 flex justify-center items-center mb-3 md:mb-4 mt-2 backdrop-blur-sm">
+                <div
+                  class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-white/20 flex justify-center items-center mb-3 md:mb-4 mt-2 backdrop-blur-sm">
                   <i class="fa-solid fa-users text-white text-xl md:text-2xl"></i>
                 </div>
                 <h3 class="card-title font-main text-xl md:text-2xl text-white">DUITS Member</h3>
@@ -1511,16 +1593,24 @@
                 <div class="my-3 md:my-4">
                   <span class="text-3xl md:text-4xl font-bold text-white font-main drop-shadow-md">500৳</span>
                 </div>
-                <ul class="text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto text-gray-100 flex-grow">
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Full course access</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Live classes via Zoom</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Google Classroom</li>
+                <ul
+                  class="text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto text-gray-100 flex-grow">
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Full course access
+                  </li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Live classes via
+                    Zoom</li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Google Classroom
+                  </li>
                   <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>WhatsApp group</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Project feedback</li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Project feedback
+                  </li>
                   <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Certificate</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Support sessions</li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Support sessions
+                  </li>
                 </ul>
-                <button class="btn bg-white text-main hover:bg-gray-100 w-full rounded-full border-none mt-auto text-sm md:text-base">Enroll Now</button>
+                <button
+                  class="btn bg-white text-main hover:bg-gray-100 w-full rounded-full border-none mt-auto text-sm md:text-base">Enroll
+                  Now</button>
               </div>
             </div>
 
@@ -1537,13 +1627,16 @@
             Instructor
             <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
           </span></h2>
-        <p class="text-base md:text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Learn from an experienced web developer with years of industry expertise and a passion for teaching.</p>
+        <p class="text-base md:text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Learn from an experienced web
+          developer with years of industry expertise and a passion for teaching.</p>
       </div>
 
       <div class="instructor-content flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
         <div class="instructor-image flex-shrink-0">
           <div class="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
-            <img src="https://media.licdn.com/dms/image/v2/D5603AQEnNg9ak9CsgQ/profile-displayphoto-shrink_800_800/B56Za3AdcZHgAk-/0/1746827074927?e=1776902400&v=beta&t=Q5p2gvy8M1hBuPjoU-CQBFjv6RUahIpxR6AXXHA_8es" alt="Instructor" class="w-full h-full object-cover">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D5603AQEnNg9ak9CsgQ/profile-displayphoto-shrink_800_800/B56Za3AdcZHgAk-/0/1746827074927?e=1776902400&v=beta&t=Q5p2gvy8M1hBuPjoU-CQBFjv6RUahIpxR6AXXHA_8es"
+              alt="Instructor" class="w-full h-full object-cover">
           </div>
         </div>
 
@@ -1581,8 +1674,10 @@
           </div>
 
           <p class="text-gray-700 text-lg leading-relaxed mb-6">
-            With over 5 years of experience in web development, I specialize in creating modern, responsive websites using the latest technologies.
-            I've helped hundreds of students transition into successful web development careers through practical, hands-on learning approaches.
+            With over 5 years of experience in web development, I specialize in creating modern, responsive websites
+            using the latest technologies.
+            I've helped hundreds of students transition into successful web development careers through practical,
+            hands-on learning approaches.
           </p>
 
           <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -1606,7 +1701,8 @@
             Us
             <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
           </span></h2>
-        <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Learn more about Dhaka University IT Society - where innovation meets education in the heart of Bangladesh's premier university.</p>
+        <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Learn more about Dhaka University IT Society
+          - where innovation meets education in the heart of Bangladesh's premier university.</p>
       </div>
 
       <!-- Society Overview -->
@@ -1614,13 +1710,17 @@
         <div class="society-info">
           <h3 class="text-3xl font-bold font-main text-main mb-6">Dhaka University IT Society</h3>
           <p class="text-gray-700 text-lg leading-relaxed mb-6">
-            Founded within the prestigious Dhaka University IT Society stands as a beacon of technological excellence and innovation.
-            We are a vibrant community of tech enthusiasts, developers, designers, and entrepreneurs working together to bridge the gap
+            Founded within the prestigious Dhaka University IT Society stands as a beacon of technological excellence
+            and innovation.
+            We are a vibrant community of tech enthusiasts, developers, designers, and entrepreneurs working together to
+            bridge the gap
             between academic knowledge and industry requirements.
           </p>
           <p class="text-gray-700 text-lg leading-relaxed mb-8">
-            Our mission is to foster a culture of continuous learning, collaboration, and innovation among students while preparing them
-            for the dynamic world of technology. Through workshops, courses, hackathons, and industry partnerships, we empower the next
+            Our mission is to foster a culture of continuous learning, collaboration, and innovation among students
+            while preparing them
+            for the dynamic world of technology. Through workshops, courses, hackathons, and industry partnerships, we
+            empower the next
             generation of tech leaders.
           </p>
 
@@ -1654,13 +1754,17 @@
         <div class="society-image">
           <div class="relative">
             <div class="w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <img src="https://scontent.fdac1-2.fna.fbcdn.net/v/t39.30808-6/480570465_639161968498576_1646113822593879667_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=2a1932&_nc_ohc=PlnO16PVx3kQ7kNvwGe6Sua&_nc_oc=AdrjH-Ip4bCNR5htZf62fsM5HqgtX8sbQwqw3Ip17GVEhOJTwaPPlemgxY679PNgTbs&_nc_zt=23&_nc_ht=scontent.fdac1-2.fna&_nc_gid=M_lmipDKIy3mKojl1Ws73g&_nc_ss=7a389&oh=00_Af0yL1ft2p797wysQw2q9isx2wN_z7c8UTK6OGH-Gii09g&oe=69DB197A" alt="Dhaka University IT Society" class="w-full h-full object-cover">
+              <img
+                src="https://scontent.fdac1-2.fna.fbcdn.net/v/t39.30808-6/480570465_639161968498576_1646113822593879667_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=2a1932&_nc_ohc=PlnO16PVx3kQ7kNvwGe6Sua&_nc_oc=AdrjH-Ip4bCNR5htZf62fsM5HqgtX8sbQwqw3Ip17GVEhOJTwaPPlemgxY679PNgTbs&_nc_zt=23&_nc_ht=scontent.fdac1-2.fna&_nc_gid=M_lmipDKIy3mKojl1Ws73g&_nc_ss=7a389&oh=00_Af0yL1ft2p797wysQw2q9isx2wN_z7c8UTK6OGH-Gii09g&oe=69DB197A"
+                alt="Dhaka University IT Society" class="w-full h-full object-cover">
             </div>
             <!-- Floating elements -->
-            <div class="absolute -top-4 -right-4 w-20 h-20 bg-main rounded-full flex items-center justify-center shadow-lg animate-bounce">
+            <div
+              class="absolute -top-4 -right-4 w-20 h-20 bg-main rounded-full flex items-center justify-center shadow-lg animate-bounce">
               <i class="fa-solid fa-code text-white text-2xl"></i>
             </div>
-            <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-special rounded-full flex items-center justify-center shadow-lg animate-pulse">
+            <div
+              class="absolute -bottom-4 -left-4 w-16 h-16 bg-special rounded-full flex items-center justify-center shadow-lg animate-pulse">
               <i class="fa-solid fa-rocket text-white text-xl"></i>
             </div>
           </div>
@@ -1671,32 +1775,41 @@
       <div class="values-section mb-16">
         <h3 class="text-3xl font-bold font-main text-main text-center mb-12">Our Core Values</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="value-card bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-main to-main/80 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div
+            class="value-card bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-main to-main/80 rounded-full flex items-center justify-center mx-auto mb-4">
               <i class="fa-solid fa-lightbulb text-white text-2xl"></i>
             </div>
             <h4 class="text-xl font-bold text-main mb-3">Innovation</h4>
             <p class="text-gray-600">Embracing cutting-edge technologies and creative problem-solving approaches.</p>
           </div>
 
-          <div class="value-card bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-special to-special/80 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div
+            class="value-card bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-special to-special/80 rounded-full flex items-center justify-center mx-auto mb-4">
               <i class="fa-solid fa-handshake text-white text-2xl"></i>
             </div>
             <h4 class="text-xl font-bold text-special mb-3">Collaboration</h4>
-            <p class="text-gray-600">Building strong partnerships between students, faculty, and industry professionals.</p>
+            <p class="text-gray-600">Building strong partnerships between students, faculty, and industry professionals.
+            </p>
           </div>
 
-          <div class="value-card bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div
+            class="value-card bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <i class="fa-solid fa-book-open text-white text-2xl"></i>
             </div>
             <h4 class="text-xl font-bold text-green-600 mb-3">Learning</h4>
             <p class="text-gray-600">Committed to continuous education and skill development for all members.</p>
           </div>
 
-          <div class="value-card bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div
+            class="value-card bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <i class="fa-solid fa-users-gear text-white text-2xl"></i>
             </div>
             <h4 class="text-xl font-bold text-purple-600 mb-3">Excellence</h4>
@@ -1709,64 +1822,76 @@
       <div class="offerings-section">
         <h3 class="text-3xl font-bold font-main text-main text-center mb-12">What We Offer</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-main">
+          <div
+            class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-main">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 bg-main rounded-full flex items-center justify-center">
                 <i class="fa-solid fa-chalkboard-teacher text-white text-xl"></i>
               </div>
               <h4 class="text-xl font-bold text-main">Expert-Led Courses</h4>
             </div>
-            <p class="text-gray-600">Comprehensive courses taught by industry professionals and experienced educators covering the latest technologies and best practices.</p>
+            <p class="text-gray-600">Comprehensive courses taught by industry professionals and experienced educators
+              covering the latest technologies and best practices.</p>
           </div>
 
-          <div class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-special">
+          <div
+            class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-special">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 bg-special rounded-full flex items-center justify-center">
                 <i class="fa-solid fa-code-branch text-white text-xl"></i>
               </div>
               <h4 class="text-xl font-bold text-special">Hands-on Projects</h4>
             </div>
-            <p class="text-gray-600">Real-world projects and assignments that build practical skills and create impressive portfolios for career advancement.</p>
+            <p class="text-gray-600">Real-world projects and assignments that build practical skills and create
+              impressive portfolios for career advancement.</p>
           </div>
 
-          <div class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-green-500">
+          <div
+            class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-green-500">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
                 <i class="fa-solid fa-network-wired text-white text-xl"></i>
               </div>
               <h4 class="text-xl font-bold text-green-600">Networking Opportunities</h4>
             </div>
-            <p class="text-gray-600">Connect with fellow students, alumni, and industry professionals through events, workshops, and our extensive network.</p>
+            <p class="text-gray-600">Connect with fellow students, alumni, and industry professionals through events,
+              workshops, and our extensive network.</p>
           </div>
 
-          <div class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
+          <div
+            class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
                 <i class="fa-solid fa-trophy text-white text-xl"></i>
               </div>
               <h4 class="text-xl font-bold text-purple-600">Competitions & Hackathons</h4>
             </div>
-            <p class="text-gray-600">Participate in coding competitions, hackathons, and challenges to test your skills and win exciting prizes.</p>
+            <p class="text-gray-600">Participate in coding competitions, hackathons, and challenges to test your skills
+              and win exciting prizes.</p>
           </div>
 
-          <div class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-blue-500">
+          <div
+            class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-blue-500">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                 <i class="fa-solid fa-briefcase text-white text-xl"></i>
               </div>
               <h4 class="text-xl font-bold text-blue-600">Career Support</h4>
             </div>
-            <p class="text-gray-600">Resume reviews, interview preparation, job placement assistance, and connections to top tech companies.</p>
+            <p class="text-gray-600">Resume reviews, interview preparation, job placement assistance, and connections to
+              top tech companies.</p>
           </div>
 
-          <div class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-pink-500">
+          <div
+            class="offering-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-pink-500">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center">
                 <i class="fa-solid fa-users text-white text-xl"></i>
               </div>
               <h4 class="text-xl font-bold text-pink-600">Community Building</h4>
             </div>
-            <p class="text-gray-600">Join a supportive community of like-minded individuals who share your passion for technology and innovation.</p>
+            <p class="text-gray-600">Join a supportive community of like-minded individuals who share your passion for
+              technology and innovation.</p>
           </div>
         </div>
       </div>
@@ -1781,11 +1906,13 @@
             Us
             <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
           </span></h2>
-        <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Get in touch with Dhaka University IT Society for course support, membership questions, or general enquiries.</p>
+        <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Get in touch with Dhaka University IT
+          Society for course support, membership questions, or general enquiries.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
-        <div class="contact-card bg-base-100 rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+        <div
+          class="contact-card bg-base-100 rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
           <div class="w-16 h-16 rounded-full bg-main/10 text-main flex items-center justify-center mx-auto mb-6">
             <i class="fa-solid fa-phone text-2xl"></i>
           </div>
@@ -1793,7 +1920,8 @@
           <p class="text-gray-600 text-lg">+880 17XX-XXXXXX</p>
         </div>
 
-        <div class="contact-card bg-base-100 rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+        <div
+          class="contact-card bg-base-100 rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
           <div class="w-16 h-16 rounded-full bg-special/10 text-special flex items-center justify-center mx-auto mb-6">
             <i class="fa-brands fa-whatsapp text-2xl"></i>
           </div>
@@ -1801,8 +1929,10 @@
           <p class="text-gray-600 text-lg">+880 17XX-XXXXXX</p>
         </div>
 
-        <div class="contact-card bg-base-100 rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
-          <div class="w-16 h-16 rounded-full bg-green-500/10 text-green-600 flex items-center justify-center mx-auto mb-6">
+        <div
+          class="contact-card bg-base-100 rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+          <div
+            class="w-16 h-16 rounded-full bg-green-500/10 text-green-600 flex items-center justify-center mx-auto mb-6">
             <i class="fa-solid fa-envelope text-2xl"></i>
           </div>
           <h3 class="text-2xl font-bold text-green-600 mb-3">Email</h3>
@@ -1813,19 +1943,24 @@
       <div class="social-links mt-12 text-center">
         <p class="text-gray-600 mb-6 text-lg">Follow us on social media for updates, events, and announcements.</p>
         <div class="flex flex-wrap justify-center items-center gap-5">
-          <a href="#" class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-main flex items-center justify-center hover:bg-main hover:text-white transition-all duration-300">
+          <a href="#"
+            class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-main flex items-center justify-center hover:bg-main hover:text-white transition-all duration-300">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="#" class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-special flex items-center justify-center hover:bg-special hover:text-white transition-all duration-300">
+          <a href="#"
+            class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-special flex items-center justify-center hover:bg-special hover:text-white transition-all duration-300">
             <i class="fa-brands fa-twitter"></i>
           </a>
-          <a href="#" class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
+          <a href="#"
+            class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="#" class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all duration-300">
+          <a href="#"
+            class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all duration-300">
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a href="#" class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-red-600 flex items-center justify-center hover:bg-red-600 hover:text-white transition-all duration-300">
+          <a href="#"
+            class="w-14 h-14 rounded-full bg-base-100 border border-gray-200 text-red-600 flex items-center justify-center hover:bg-red-600 hover:text-white transition-all duration-300">
             <i class="fa-brands fa-youtube"></i>
           </a>
         </div>
