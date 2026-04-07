@@ -19,9 +19,9 @@
 <body>
 
   <Header>
-    <nav class="main nav-main py-3">
+    <nav class="nav-main py-3 md:w-full lg:main">
       <div class="navbar bg-base-100">
-        <div class="navbar-start">
+        <div class="navbar-start justify-between">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -40,7 +40,7 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-2xl text-main font-main" href="/"><img class="w-15" src="src/assets/img/logo.jpg" alt="">Dhaka university it society</a>
+          <a class="btn btn-ghost md:flex md:flex-row-reverse sm:flex sm:flex-row-reverse lg:text-2xl text-main font-main logo-link sm:gap-[30px] sm:justify-around md:gap-[30px] md:justify-around" href="/"><img class="w-15" src="src/assets/img/logo.jpg" alt=""><span>Dhaka university it society</span></a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -80,8 +80,8 @@
       <!-- background icons -->
 
       <div
-        class="main banner-main grid items-center gap-6 md:gap-8 lg:gap-10 lg:grid-cols-[1.05fr_0.95fr] px-4 md:px-0">
-        <div class="banner-text text-white max-w-2xl">
+        class="lg:main banner-main items-center gap-6 md:gap-8 lg:gap-10 lg:grid-cols-[1.05fr_0.95fr] px-4 md:px-0">
+        <div class="banner-text text-white">
           <div
             class="inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-sm uppercase tracking-[0.2em] text-white shadow-lg shadow-white/5 mb-6">
             <i class="fa-solid fa-school-circle-check"></i>
@@ -120,7 +120,7 @@
             </a>
           </div>
         </div>
-        <div class="banner-img relative flex justify-center md:justify-end mt-8 lg:mt-0">
+        <div class="banner-img relative hidden lg:flex justify-center lg:justify-end mt-8 lg:mt-0">
           <img
             class="relative z-20 w-full md:w-[110%] lg:w-[120%] max-w-none h-auto drop-shadow-xl/50 animate-[bounce_3s_ease-in-out_infinite]"
             src="src/assets/img/banner.png" alt="">
@@ -133,7 +133,7 @@
 
   <main>
     <section class="course-details-section pt-20">
-      <div class="course-details-main main">
+      <div class="course-details-main lg:main">
         <div class="course-details-title title text-center px-4">
           <h2>What we <span class="relative inline-block">
               Learn
@@ -1058,7 +1058,7 @@
     </section>
 
     <section class="course-timeline-section py-20 bg-gradient-to-br from-base-100 to-base-200">
-      <div class="course-timeline-main main">
+      <div class="course-timeline-main lg:main">
         <!-- Course Overview -->
         <div class="course-timeline-content-box mb-20">
           <div class="course-details-title title text-center mb-16">
@@ -1621,7 +1621,7 @@
   </main>
 
   <section class="instructor-section py-16 md:py-20 bg-base-200">
-    <div class="main px-4 md:px-0">
+    <div class="lg:main px-4 md:px-0">
       <div class="course-details-title title text-center mb-12 md:mb-16">
         <h2>Meet the <span class="relative inline-block">
             Instructor
@@ -1695,7 +1695,7 @@
 
   <!-- About Us Section -->
   <section class="about-us-section py-16 md:py-20 bg-gradient-to-br from-base-100 to-base-200">
-    <div class="main px-4 md:px-0">
+    <div class="lg:main px-4 md:px-0">
       <div class="course-details-title title text-center mb-12 md:mb-16">
         <h2>About <span class="relative inline-block">
             Us
@@ -1900,7 +1900,7 @@
 
   <!-- Contact Us Section -->
   <section class="contact-us-section py-16 md:py-20 bg-white">
-    <div class="main px-4 md:px-0">
+    <div class="lg:main px-4 md:px-0">
       <div class="course-details-title title text-center mb-12 md:mb-16">
         <h2>Contact <span class="relative inline-block">
             Us

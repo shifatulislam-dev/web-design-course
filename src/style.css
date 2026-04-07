@@ -110,3 +110,18 @@
 .animate-underline {
   animation: underlineMove 2.5s infinite ease-in-out;
 }
+
+
+
+    @media (min-width: 240px) and (max-width: 1023px) {
+      .logo-link {
+        display: flex !important;
+        flex-direction: row-reverse !important;
+        gap: 30px !important;
+        justify-content: space-around !important;
+      }
+      .navbar-start {
+        justify-content: space-between !important;
+        width: 100% !important;
+      }
+    }
