@@ -39,7 +39,7 @@
     End of Navbar Part
      -->
 
-    <section class="banner-section relative py-25 overflow-hidden">
+    <section class="banner-section relative overflow-hidden bg-[radial-gradient(circle_at_top_right,_rgba(255,207,0,0.15),_transparent_35%),linear-gradient(135deg,#0b1120_0%,#131a33_40%,#0d1220_100%)] py-24">
 
       <!-- background icons -->
 
@@ -56,39 +56,43 @@
 
       <!-- background icons -->
 
-      <div class="main banner-main grid grid-cols-2">
-        <div class="banner-text">
-          <h1 class="banner-heading font-main text-8xl text-white">
-            <span class="text-special">Responsive Web </span><br>Design with DUITS
+      <div class="main banner-main grid items-center gap-6 md:gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] px-4 md:px-0">
+        <div class="banner-text text-white max-w-2xl">
+          <div class="inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-sm uppercase tracking-[0.2em] text-white shadow-lg shadow-white/5 mb-6">
+            <i class="fa-solid fa-school-circle-check"></i>
+            DUITS Course</div>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-main leading-tight">
+            Responsive Web Design<br class="hidden sm:block"/> Course with DUITS
           </h1>
-          <p class="text-white text-2xl font-roboto"><span class="skeleton skeleton-text">
-              Crafting responsive dreams into beautiful digital worlds.
-            </span></p>
-          <div class="icon-box py-8 flex items-center gap-14">
-            <div class="icon-single flex flex-col items-center text-center">
-              <div class="icon-div h-20 w-20 rounded-full bg-white flex justify-center items-center">
-                <i class="fa-solid fa-code text-main text-3xl"></i>
-              </div>
-              <h3 class="text-white mt-2 font-main text-xl">HTML <br> CSS</h3>
+          <p class="mt-6 text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
+            Learn HTML, CSS, JavaScript and responsive layouts through real assignments, live guidance, and support from Dhaka University IT Society.
+          </p>
+
+          <div class="mt-6 md:mt-8 grid gap-3 grid-cols-2 sm:grid-cols-3">
+            <div class="rounded-2xl bg-white/10 border border-white/10 p-4 text-center">
+              <div class="text-2xl sm:text-3xl font-bold text-white">8</div>
+              <div class="text-xs md:text-sm text-gray-400">Weeks</div>
             </div>
-            <div class="icon-single flex flex-col items-center text-center">
-              <div class="icon-div h-20 w-20 rounded-full bg-white flex justify-center items-center">
-                <i class="fa-brands fa-js text-main text-3xl"></i>
-              </div>
-              <h3 class="text-white mt-2 font-main text-xl">JavaScript <br>JQuery</h3>
+            <div class="rounded-2xl bg-white/10 border border-white/10 p-4 text-center">
+              <div class="text-2xl sm:text-3xl font-bold text-white">24</div>
+              <div class="text-xs md:text-sm text-gray-400">Classes</div>
             </div>
-            <div class="icon-single flex flex-col items-center text-center">
-              <div class="icon-div h-20 w-20 rounded-full bg-white flex justify-center items-center">
-                <i class="fa-brands fa-tailwind-css text-main text-3xl"></i>
-              </div>
-              <h3 class="text-white mt-2 font-main text-xl">Tailwind <br>Bootstrap</h3>
+            <div class="hidden sm:block rounded-2xl bg-white/10 border border-white/10 p-4 text-center">
+              <div class="text-2xl sm:text-3xl font-bold text-white">100+</div>
+              <div class="text-xs md:text-sm text-gray-400">Projects</div>
             </div>
           </div>
-          <button class="btn bg-special text-white hover:bg-main px-8 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 mt-6">Enroll Now</button>
+
+          <div class="mt-8 md:mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+            <a href="#" class="btn bg-special text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-sm md:text-lg shadow-xl shadow-special/40 hover:bg-main transition-all duration-300">Enroll Now</a>
+            <a href="#course-details" class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm md:text-lg">
+              <i class="fa-solid fa-arrow-down"></i> <span class="hidden sm:inline">View</span> Curriculum
+            </a>
+          </div>
         </div>
-        <div class="banner-img relative">
+        <div class="banner-img relative flex justify-center md:justify-end mt-8 lg:mt-0">
           <img
-            class="relative z-20 w-full top-10 overflow-hidden drop-shadow-xl/50 animate-[bounce_3s_ease-in-out_infinite]"
+            class="relative z-20 w-full md:w-[110%] lg:w-[120%] max-w-none h-auto drop-shadow-xl/50 animate-[bounce_3s_ease-in-out_infinite]"
             src="src/assets/img/banner.png" alt="">
           <div class="wavy-box absolute top-0 left-40 animate-spin [animation-duration:10s]"></div>
         </div>
@@ -100,14 +104,14 @@
   <main>
     <section class="course-details-section pt-20">
       <div class="course-details-main main">
-        <div class="course-details-title title text-center">
+        <div class="course-details-title title text-center px-4">
           <h2>What we <span class="relative inline-block">
               Learn
               <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
             </span></h2>
-          <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Explore our comprehensive curriculum covering essential web development technologies from HTML to advanced frameworks.</p>
+          <p class="text-base md:text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Explore our comprehensive curriculum covering essential web development technologies from HTML to advanced frameworks.</p>
         </div>
-        <div class="course-details-contents grid grid-cols-3 gap-5 mt-10">
+        <div class="course-details-contents grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
 
           <!-- 
         -------------------------------------------------------
@@ -115,7 +119,7 @@
         -------------------------------------------------------
         -->
 
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png" alt="Shoes" />
             </figure>
@@ -215,7 +219,7 @@
             </div>
           </div>
 
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img src="https://sabe.io/classes/css/hero.png" alt="Shoes" />
             </figure>
@@ -313,7 +317,7 @@
             </div>
           </div>
 
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img src="https://techsoftechs.com//assets/post/details/css-animation-and-transitions_1687448319.webp"
                 alt="Shoes" />
@@ -414,7 +418,7 @@
             </div>
           </div>
 
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img
                 src="https://images.theengineeringprojects.com/image/main/2019/12/Introduction-to-JavaScript-with-complete-Guide-1.jpg"
@@ -515,7 +519,7 @@
             </div>
           </div>
 
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img
                 src="https://divleaf.ru/web/theme/media/category/0001/01/1c936d3c2afeb4f3ab8c137ce5be640ec965f2bf.jpeg"
@@ -617,7 +621,7 @@
             </div>
           </div>
 
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img
                 src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2152651580/settings_images/a415f77-addc-558f-c62e-76470d70ecc_Tailwind_CSS_Course.jpg"
@@ -719,7 +723,7 @@
             </div>
           </div>
 
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img src="https://i.ytimg.com/vi/ky95s6eoNr4/maxresdefault.jpg" alt="Shoes" />
             </figure>
@@ -819,7 +823,7 @@
             </div>
           </div>
 
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img
                 src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/60/4b/27604b6c-b961-a0a6-af11-8ca5b536cbbd/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/1200x630wa.png"
@@ -920,7 +924,7 @@
             </div>
           </div>
 
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img src="https://funtechsummercamps.com/blog/wp-content/uploads/2025/08/ai-learning.jpg" alt="Shoes" />
             </figure>
@@ -1395,116 +1399,116 @@
       </div>
     </section>
 
-    <section class="pricing-section py-20 relative overflow-hidden">
+    <section class="pricing-section py-16 md:py-20 relative overflow-hidden">
       <!-- Background elements for aesthetic -->
-      <div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-main/5 blur-3xl"></div>
-      <div class="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-[#ffcf00]/10 blur-3xl"></div>
+      <div class="absolute top-0 right-0 w-52 md:w-96 h-52 md:h-96 rounded-full bg-main/5 blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-52 md:w-96 h-52 md:h-96 rounded-full bg-[#ffcf00]/10 blur-3xl"></div>
       
-      <div class="main-pricing main relative z-10">
-        <div class="course-details-title title text-center mb-16">
+      <div class="main-pricing main relative z-10 px-4 md:px-0">
+        <div class="course-details-title title text-center mb-12 md:mb-16">
           <h2>Course <span class="relative inline-block">
               Pricing
               <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
             </span></h2>
-          <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Choose the right path for your learning journey. We offer special discounts to support students and DUITS members.</p>
+          <p class="text-base md:text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Choose the right path for your learning journey. We offer special discounts to support students and DUITS members.</p>
         </div>
         
         <div class="pricing-content-box">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
             <!-- Non-Student Plan -->
             <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-base-200">
-              <div class="card-body items-center text-center p-8">
-                <div class="icon-div h-16 w-16 rounded-full bg-base-200 flex justify-center items-center mb-4 mt-2">
-                  <i class="fa-solid fa-user text-main text-2xl"></i>
+              <div class="card-body items-center text-center p-6 md:p-8">
+                <div class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
+                  <i class="fa-solid fa-user text-main text-xl md:text-2xl"></i>
                 </div>
-                <h3 class="card-title font-main text-2xl text-gray-800">Non-Student</h3>
-                <p class="text-sm text-gray-500 mb-2 font-roboto h-10">For professionals and general learners.</p>
-                <div class="my-4">
-                  <span class="text-4xl font-bold text-main font-main">1500৳</span>
+                <h3 class="card-title font-main text-xl md:text-2xl text-gray-800\">Non-Student</h3>
+                <p class="text-xs md:text-sm text-gray-500 mb-2 font-roboto h-10\">For professionals and general learners.</p>
+                <div class=\"my-3 md:my-4\">
+                  <span class=\"text-3xl md:text-4xl font-bold text-main font-main\">1500৳</span>
                 </div>
-                <ul class="text-left w-full space-y-4 my-6 text-sm font-roboto flex-grow">
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Full course access</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Live classes via Zoom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Course management via Google Classroom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Access to private WhatsApp group</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Project review & feedback</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Course completion certificate</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Dedicated support sessions</li>
+                <ul class=\"text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto flex-grow\">
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Full course access</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Live classes via Zoom</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Google Classroom</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>WhatsApp group</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Project feedback</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Certificate</li>
+                  <li><i class=\"fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg\"></i>Support sessions</li>
                 </ul>
-                <button class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto">Enroll Now</button>
+                <button class=\"btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto text-sm md:text-base\">Enroll Now</button>
               </div>
             </div>
 
             <!-- Student Plan -->
             <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-base-200">
-              <div class="card-body items-center text-center p-8">
-                <div class="icon-div h-16 w-16 rounded-full bg-base-200 flex justify-center items-center mb-4 mt-2">
-                  <i class="fa-solid fa-graduation-cap text-main text-2xl"></i>
+              <div class="card-body items-center text-center p-6 md:p-8">
+                <div class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
+                  <i class="fa-solid fa-graduation-cap text-main text-xl md:text-2xl"></i>
                 </div>
-                <h3 class="card-title font-main text-2xl text-gray-800">Student</h3>
-                <p class="text-sm text-gray-500 mb-2 font-roboto h-10">For students from any institution.</p>
-                <div class="my-4">
-                  <span class="text-4xl font-bold text-main font-main">1200৳</span>
+                <h3 class="card-title font-main text-xl md:text-2xl text-gray-800">Student</h3>
+                <p class="text-xs md:text-sm text-gray-500 mb-2 font-roboto h-10">For students from any institution.</p>
+                <div class="my-3 md:my-4">
+                  <span class="text-3xl md:text-4xl font-bold text-main font-main">1200৳</span>
                 </div>
-                <ul class="text-left w-full space-y-4 my-6 text-sm font-roboto flex-grow">
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Full course access</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Live classes via Zoom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Course management via Google Classroom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Access to private WhatsApp group</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Project review & feedback</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Course completion certificate</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Dedicated support sessions</li>
+                <ul class="text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto flex-grow">
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Full course access</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Live classes via Zoom</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Google Classroom</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>WhatsApp group</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Project feedback</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Certificate</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Support sessions</li>
                 </ul>
-                <button class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto">Enroll Now</button>
+                <button class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto text-sm md:text-base">Enroll Now</button>
               </div>
             </div>
 
             <!-- DU Student Plan -->
             <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-base-200">
-              <div class="card-body items-center text-center p-8">
-                <div class="icon-div h-16 w-16 rounded-full bg-base-200 flex justify-center items-center mb-4 mt-2">
-                  <i class="fa-solid fa-building-columns text-main text-2xl"></i>
+              <div class="card-body items-center text-center p-6 md:p-8">
+                <div class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-base-200 flex justify-center items-center mb-3 md:mb-4 mt-2">
+                  <i class="fa-solid fa-building-columns text-main text-xl md:text-2xl"></i>
                 </div>
-                <h3 class="card-title font-main text-2xl text-gray-800">DU Student</h3>
-                <p class="text-sm text-gray-500 mb-2 font-roboto h-10">Exclusive for Dhaka University students.</p>
-                <div class="my-4">
-                  <span class="text-4xl font-bold text-main font-main">800৳</span>
+                <h3 class="card-title font-main text-xl md:text-2xl text-gray-800">DU Student</h3>
+                <p class="text-xs md:text-sm text-gray-500 mb-2 font-roboto h-10">Exclusive for DU students.</p>
+                <div class="my-3 md:my-4">
+                  <span class="text-3xl md:text-4xl font-bold text-main font-main">800৳</span>
                 </div>
-                <ul class="text-left w-full space-y-4 my-6 text-sm font-roboto flex-grow">
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Full course access</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Live classes via Zoom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Course management via Google Classroom</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Access to private WhatsApp group</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Project review & feedback</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Course completion certificate</li>
-                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-lg"></i>Dedicated support sessions</li>
+                <ul class="text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto flex-grow">
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Full course access</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Live classes via Zoom</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Google Classroom</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>WhatsApp group</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Project feedback</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Certificate</li>
+                  <li><i class="fa-solid fa-circle-check text-green-500 mr-2 text-base md:text-lg"></i>Support sessions</li>
                 </ul>
-                <button class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto">Enroll Now</button>
+                <button class="btn btn-outline border-main text-main w-full rounded-full hover:bg-main hover:text-white hover:border-main mt-auto text-sm md:text-base">Enroll Now</button>
               </div>
             </div>
 
             <!-- DUITS Member Plan -->
             <div class="card bg-main shadow-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-3 text-white border border-main">
-              <div class="card-body items-center text-center p-8">
-                <div class="icon-div h-16 w-16 rounded-full bg-white/20 flex justify-center items-center mb-4 mt-2 backdrop-blur-sm">
-                  <i class="fa-solid fa-users text-white text-2xl"></i>
+              <div class="card-body items-center text-center p-6 md:p-8">
+                <div class="icon-div h-14 md:h-16 w-14 md:w-16 rounded-full bg-white/20 flex justify-center items-center mb-3 md:mb-4 mt-2 backdrop-blur-sm">
+                  <i class="fa-solid fa-users text-white text-xl md:text-2xl"></i>
                 </div>
-                <h3 class="card-title font-main text-2xl text-white">DUITS Member</h3>
-                <p class="text-sm text-gray-200 mb-2 font-roboto h-10">For verified active DUITS members.</p>
-                <div class="my-4">
-                  <span class="text-4xl font-bold text-white font-main drop-shadow-md">500৳</span>
+                <h3 class="card-title font-main text-xl md:text-2xl text-white">DUITS Member</h3>
+                <p class="text-xs md:text-sm text-gray-200 mb-2 font-roboto h-10">For verified DUITS members.</p>
+                <div class="my-3 md:my-4">
+                  <span class="text-3xl md:text-4xl font-bold text-white font-main drop-shadow-md">500৳</span>
                 </div>
-                <ul class="text-left w-full space-y-4 my-6 text-sm font-roboto text-gray-100 flex-grow">
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-lg"></i>Full course access</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-lg"></i>Live classes via Zoom</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-lg"></i>Course management via Google Classroom</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-lg"></i>Access to private WhatsApp group</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-lg"></i>Project review & feedback</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-lg"></i>Course completion certificate</li>
-                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-lg"></i>Dedicated support sessions</li>
+                <ul class="text-left w-full space-y-3 md:space-y-4 my-6 text-xs md:text-sm font-roboto text-gray-100 flex-grow">
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Full course access</li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Live classes via Zoom</li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Google Classroom</li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>WhatsApp group</li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Project feedback</li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Certificate</li>
+                  <li><i class="fa-solid fa-circle-check text-special mr-2 text-base md:text-lg"></i>Support sessions</li>
                 </ul>
-                <button class="btn bg-white text-main hover:bg-gray-100 w-full rounded-full border-none mt-auto">Enroll Now</button>
+                <button class="btn bg-white text-main hover:bg-gray-100 w-full rounded-full border-none mt-auto text-sm md:text-base">Enroll Now</button>
               </div>
             </div>
 
@@ -1514,14 +1518,14 @@
     </section>
   </main>
 
-  <section class="instructor-section py-20 bg-base-200">
-    <div class="main">
-      <div class="course-details-title title text-center mb-16">
+  <section class="instructor-section py-16 md:py-20 bg-base-200">
+    <div class="main px-4 md:px-0">
+      <div class="course-details-title title text-center mb-12 md:mb-16">
         <h2>Meet the <span class="relative inline-block">
             Instructor
             <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
           </span></h2>
-        <p class="text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Learn from an experienced web developer with years of industry expertise and a passion for teaching.</p>
+        <p class="text-base md:text-lg mt-5 text-gray-500 max-w-2xl mx-auto font-roboto">Learn from an experienced web developer with years of industry expertise and a passion for teaching.</p>
       </div>
 
       <div class="instructor-content flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
@@ -1583,9 +1587,9 @@
   </section>
 
   <!-- About Us Section -->
-  <section class="about-us-section py-20 bg-gradient-to-br from-base-100 to-base-200">
-    <div class="main">
-      <div class="course-details-title title text-center mb-16">
+  <section class="about-us-section py-16 md:py-20 bg-gradient-to-br from-base-100 to-base-200">
+    <div class="main px-4 md:px-0">
+      <div class="course-details-title title text-center mb-12 md:mb-16">
         <h2>About <span class="relative inline-block">
             Us
             <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
@@ -1758,9 +1762,9 @@
   </section>
 
   <!-- Contact Us Section -->
-  <section class="contact-us-section py-20 bg-white">
-    <div class="main">
-      <div class="course-details-title title text-center mb-16">
+  <section class="contact-us-section py-16 md:py-20 bg-white">
+    <div class="main px-4 md:px-0">
+      <div class="course-details-title title text-center mb-12 md:mb-16">
         <h2>Contact <span class="relative inline-block">
             Us
             <span class="absolute left-0 bottom-2 h-[2px] w-full bg-[#ffcf00] animate-underline"></span>
@@ -1817,11 +1821,6 @@
     </div>
   </section>
 
-  <footer class="py-6 bg-base-200 text-base-content">
-    <div class="main text-center text-sm text-gray-600">
-      <p>© 2026 Dhaka University IT Society. All rights reserved.</p>
-    </div>
-  </footer>
 
   <script src="https://kit.fontawesome.com/3aaa27906b.js" crossorigin="anonymous"></script>
   <script src="/src/main.js"></script>
