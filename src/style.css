@@ -113,15 +113,31 @@
 
 
 
-    @media (min-width: 240px) and (max-width: 1023px) {
+    @media (min-width: 240px) and (max-width: 820px) {
       .logo-link {
         display: flex !important;
-        flex-direction: row-reverse !important;
+        flex-direction: row-reverse;
         gap: 30px !important;
         justify-content: space-around !important;
       }
       .navbar-start {
         justify-content: space-between !important;
         width: 100% !important;
+      }
+      .banner-enroll-btn{
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+      }
+      .banner-main{
+        text-align: center !important;
+      }
+      .banner-img{
+        width: 70% !important;
+        margin: 50px auto 0 auto !important;
+      }
+      .wavy-box{
+        top: 30%;
+        left: -25%;
       }
     }
